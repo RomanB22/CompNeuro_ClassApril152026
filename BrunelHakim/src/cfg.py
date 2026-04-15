@@ -41,7 +41,7 @@ cfg.J            = 1.5       # mV   synaptic weight magnitude; applied as -J (in
 cfg.delay        = 2.0       # ms   synaptic transmission delay (delta in paper)
 
 # ─── Best params combinations ────────────────────────────────────────────────────────────────
-# cfg.sigmaext, cfg.J, cfg.muext = [1.2, 0.1, 25.0], [5, 0.5, 80.]
+# cfg.sigmaext, cfg.J, cfg.muext = [1.2, 0.1, 25.0], [7, 1.5, 80.], [3, 1.5, 80.], [10, 1.5, 80.]
 # ─── Recording ────────────────────────────────────────────────────────────────
 # Record the LIF internal voltage V from a handful of example cells.
 # NetPyNE variable format for point-process RANGE vars: '<MOD>_<VAR>'
