@@ -1,0 +1,98 @@
+{
+  "_labelid": 0,
+  "scale": 1,
+  "sizeX": 100,
+  "sizeY": 100,
+  "sizeZ": 100,
+  "shape": "cuboid",
+  "rotateCellsRandomly": false,
+  "defineCellShapes": false,
+  "correctBorder": false,
+  "cellsVisualizationSpacingMultiplier": [
+    1,
+    1,
+    1
+  ],
+  "scaleConnWeight": 1,
+  "scaleConnWeightNetStims": 1,
+  "scaleConnWeightModels": false,
+  "defaultWeight": 1,
+  "defaultDelay": 1,
+  "defaultThreshold": 10,
+  "propVelocity": 500.0,
+  "mapping": {},
+  "cellParams": {
+    "PYR": {
+      "secs": {
+        "soma": {
+          "geom": {
+            "diam": 18.8,
+            "L": 18.8,
+            "Ra": 123.0
+          },
+          "mechs": {
+            "hh": {
+              "gnabar": 0.12,
+              "gkbar": 0.036,
+              "gl": 0.003,
+              "el": -70
+            }
+          },
+          "vinit": -71
+        }
+      }
+    }
+  },
+  "popParams": {
+    "PYR": {
+      "cellType": "PYR",
+      "numCells": 200
+    }
+  },
+  "popTagsCopiedToCells": [
+    "cellModel",
+    "cellType"
+  ],
+  "synMechParams": {
+    "AMPA": {
+      "mod": "Exp2Syn",
+      "tau1": 0.1,
+      "tau2": 1.0,
+      "e": 0
+    }
+  },
+  "connParams": {
+    "PYR->PYR": {
+      "preConds": {
+        "pop": "PYR"
+      },
+      "postConds": {
+        "pop": "PYR"
+      },
+      "weight": 0.002,
+      "delay": "0.2+normal(13.0,1.4)",
+      "threshold": 10,
+      "convergence": "uniform(1,15)"
+    }
+  },
+  "subConnParams": {},
+  "stimSourceParams": {
+    "bkg": {
+      "type": "NetStim",
+      "rate": 10,
+      "noise": 0.5,
+      "start": 1
+    }
+  },
+  "stimTargetParams": {
+    "bkg->PYR": {
+      "source": "bkg",
+      "conds": {
+        "pop": "PYR"
+      },
+      "weight": 0.1,
+      "delay": "uniform(1,5)"
+    }
+  },
+  "rxdParams": {}
+}
