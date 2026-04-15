@@ -5,3 +5,5 @@ data/
 arm64
 .claude/
 chatGPT/
+output/
+**/output/
