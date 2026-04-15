@@ -9,3 +9,6 @@ output/
 **/output/
 environment.yml
 setupMPI.sh
+*.json
+*.png
+*.pkl

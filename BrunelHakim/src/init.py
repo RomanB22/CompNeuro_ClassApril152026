@@ -41,8 +41,8 @@ os.makedirs('output', exist_ok=True)
 
 # ─── NetPyNE simulation ───────────────────────────────────────────────────────
 # Imports must come after mod compilation so NEURON can load the mechanisms.
-from netpyne import sim       # noqa: E402
-from netParams import netParams  # noqa: E402
-from cfg import cfg              # noqa: E402
+from netpyne import sim       
+from netParams import netParams  
+from cfg import cfg              
 
 sim.createSimulateAnalyze(netParams=netParams, simConfig=cfg)
