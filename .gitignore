@@ -7,3 +7,5 @@ arm64
 chatGPT/
 output/
 **/output/
+environment.yml
+setupMPI.sh
