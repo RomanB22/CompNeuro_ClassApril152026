@@ -1,4 +1,7 @@
 from netpyne import specs
+from cfg import simConfig
+
+simConfig.update()
 
 # Network parameters
 netParams = specs.NetParams()  # object of class NetParams to store the network parameters
@@ -22,7 +25,7 @@ PYRcell = {'secs': {}} # cell rule dict
 PYRcell['secs']['soma'] = {'geom': {}, 'mechs': {}} # soma params dict
 PYRcell['secs']['soma']['geom'] = {'diam': 18.8, 'L': 18.8, 'Ra': 123.0} # soma geometry
 PYRcell['secs']['soma']['mechs']['hh'] = {'gnabar': 0.12, 'gkbar': 0.036, 'gl': 0.003, 'el': -70} # soma hh mechanism
-PYRcell['secs']['soma']['vinit'] = -71 # set initial membrane potential
+PYRcell['secs']['soma']['vinit'] = simConfig.vinit # set initial membrane potential
 netParams.cellParams['PYR'] = PYRcell # add dict to list of cell params
 
 # Synaptic mechanism parameters

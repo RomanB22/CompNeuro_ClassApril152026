@@ -12,3 +12,8 @@ setupMPI.sh
 *.json
 *.png
 *.pkl
+batch_checkpoints/
+batch_results/
+trial.*
+trials.*
+gridSearch_seeds.csv
