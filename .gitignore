@@ -17,3 +17,4 @@ batch_results/
 trial.*
 trials.*
 gridSearch_seeds.csv
+.DS_Store
