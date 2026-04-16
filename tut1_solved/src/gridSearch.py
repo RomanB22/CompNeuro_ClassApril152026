@@ -13,7 +13,7 @@ params = {
 # Run the grid search (27 combinations: 3 x 3 x 3)
 # -------------------------------------------------------------------------
 search(
-    job_type='sh',      # change to 'hpc_slurm' / 'sge' for cluster
+    job_type='sh',      # change to 'suny' for cluster
     comm_type = 'socket', # 'socket', 'sfs', None
     params=params,
     run_config={
