@@ -1,0 +1,27 @@
+name: CompNeuroCourse
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Keep only top-level dependencies so Conda can resolve the right builds
+  # for the target platform instead of replaying an arm64-specific solve.
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - bokeh
+  - pyyaml
+  - tqdm
+  - mpich
+  - mpi4py
+  - optuna
+  - pip:
+      - batchtk==0.1.6
+      - netpyne==1.1.1
+      - neuron==9.0.1
+      - ray==2.55.0
+      - lfpykit==0.6.2
+      - meautility==1.5.3
+      - matplotlib-scalebar==0.9.0
