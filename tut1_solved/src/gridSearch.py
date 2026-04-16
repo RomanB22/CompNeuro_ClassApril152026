@@ -18,10 +18,12 @@ run_configDownstate={
         'mem': '8G',
         'realtime': '00:30:00'
 }
+jobtypeSUNYHPC= 'suny'
+commtypeSUNYHPC= 'sfs'
 
 search(
     job_type='sh',      # change to 'suny' for cluster
-    comm_type = 'socket', # 'socket', 'sfs', None
+    comm_type = 'socket', # 'socket' for local sims, 'sfs' for SUNY cluster
     params=params,
     run_config={
         'command': 'python -u src/init.py',
