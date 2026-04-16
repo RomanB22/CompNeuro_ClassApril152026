@@ -13,12 +13,11 @@ params = {
 # Run the grid search (27 combinations: 3 x 3 x 3)
 # -------------------------------------------------------------------------
 run_configDownstate={
-        'env': 'conda activate CompNeuroCourse',
-        'script': 'python -u src/init.py',
+        'command': 'conda activate CompNeuroCourse \nexport UCX_TLS=tcp,self \nexport LD_LIBRARY_PATH=~/miniconda3/envs/CompNeuroCourse/lib\nsrun --mpi=pmi2 nrniv -python -mpi python -u src/init.py',
         'cores': 1,
         'mem': '8G',
         'realtime': '00:30:00'
-    }
+}
 
 search(
     job_type='sh',      # change to 'suny' for cluster
