@@ -15,7 +15,7 @@ source ~/.bashrc
 conda activate CompNeuroCourse
 # For the Downstate cluster
 export LD_LIBRARY_PATH=~/miniconda3/envs/CompNeuroCourse/lib
-export UCX_TLS=tcp,self # To prevent erro with MPI memory allocation
+export UCX_TLS=tcp,self # To prevent error with MPI memory allocation
 
 cd "$MODEL_DIR"
 export PYTHONPATH="$MODEL_DIR${PYTHONPATH:+:$PYTHONPATH}"
